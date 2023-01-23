@@ -1,0 +1,20 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-icon-background {
+    background-color: #B68C5A;
+}
