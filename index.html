@@ -21,14 +21,14 @@
     <!-- header part -->
     <!-- navbar part -->
     <nav class="container navbar navbar-expand-lg navbar-light  ">
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <a class="navbar-brand fw-bold fs-2" href="#"><img src="./images/Group 2.png" alt=""></a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav fw-semibold">
+                <ul class="navbar-nav fw-semibold ">
                     <li class="nav-item">
                         <a class="nav-link " href="#home">Home</a>
                     </li>
@@ -45,13 +45,58 @@
                         <a class="nav-link " href="#contact">Contact Us <i class="fas fa-chevron-right"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Register</a>
+                        <a class="nav-link " href="#"><button type="button"
+                                class="btn btn-info btn-icon-background text-light d-block d-lg-none"
+                                data-bs-toggle="modal" data-bs-target="#modalRegister">Free
+                                Consultation</button></a>
                     </li>
                 </ul>
             </div>
             <form role="search">
-                <button type="button" class="btn btn-info btn-icon-background text-light">Free
+                <button type="button" class="btn btn-info btn-icon-background text-light d-none  d-lg-block"
+                    data-bs-toggle="modal" data-bs-target="#modalRegister">Free
                     Consultation</button>
+                <!-- modal part -->
+                <div class="modal fade " tabindex="-1" id="modalRegister">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Free Consultation</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <!-- <span>&times;</span> -->
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="inputfirstName" class="form-label">First name</label>
+                                        <input type="text " class="form-control" id="inputfirstName"
+                                            placeholder="First name">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="inputlastName" class="form-label">Last name</label>
+                                        <input type="text " class="form-control" id="inputlastName"
+                                            placeholder="Last name">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Enter Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Sign In</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </form>
         </div>
     </nav>
@@ -330,22 +375,22 @@
     </main>
 
     <!-- footer part  -->
-    <footer class="mt-5 bg-dark">
+    <footer class="mt-5 bg-dark p-5">
         <div class="container">
             <div class="row">
-                <div class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 text-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center">
                     <img src="./images/Group 37.png" alt="" class="img-fluid pb-3">
-                    <p class="text-white">Legal Solutions is a dynamic law firm with a clear vision of the future. We
+                    <p class="text-light">Legal Solutions is a dynamic law firm with a clear vision of the future. We
                         are a firm that understands what clients need today and, equally importantly, what they will
                         need tomorrow. </p>
                 </div>
                 <div class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 text-center text-white">
                     <h4 class="mb-3">Useful Links</h4>
-                    <p><a class="text-decoration-none text-white" href="#">Home</a></p>
-                    <p><a class="text-decoration-none text-white" href="#services">Services</a></p>
-                    <p><a class="text-decoration-none text-white" href="#clients">Clients</a></p>
-                    <p><a class="text-decoration-none text-white" href="#faq">FAQ</a></p>
-                    <p><a class="text-decoration-none text-white" href="#contact">Contact us</a></p>
+                    <p><a class="text-decoration-none text-light" href="#">Home</a></p>
+                    <p><a class="text-decoration-none text-light" href="#services">Services</a></p>
+                    <p><a class="text-decoration-none text-light" href="#clients">Clients</a></p>
+                    <p><a class="text-decoration-none text-light" href="#faq">FAQ</a></p>
+                    <p><a class="text-decoration-none text-light" href="#contact">Contact us</a></p>
                 </div>
                 <div class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 text-center text-white">
                     <h4 class="mb-3">Contact Us</h4>
@@ -367,14 +412,10 @@
                 </div>
             </div>
         </div>
-        <div class="text-center text-white py-3">
+        <div class="text-center text-light py-3">
             <p>&copy; All Rights Reserved</p>
         </div>
     </footer>
-
-
-
-
 
     <!-- bootstrap.bundle.min.js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
