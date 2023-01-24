@@ -39,7 +39,7 @@
                         <a class="nav-link " href="#clients">Clients <i class="fas fa-chevron-right"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">FAQ <i class="fas fa-chevron-right"></i></a>
+                        <a class="nav-link " href="#faq">FAQ <i class="fas fa-chevron-right"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">Contact Us <i class="fas fa-chevron-right"></i></a>
@@ -58,7 +58,7 @@
     <!-- banner part -->
     <div class="container mt-5">
         <div class="position-relative banner-img overflow-hidden">
-            <img class="img-fluid " src="./images/Rectangle 4.png" alt="">
+            <img class="w-100 img-fluid " src="./images/Rectangle 4.png" alt="">
             <div class="position-absolute top-50 start-50 translate-middle text-center text-light ">
                 <h1>We Provide Effective <br>Legal Solutions</h1>
                 <p>Legal Solutions is a dynamic law firm with a clear vision of the future. We are a firm that
@@ -191,6 +191,96 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </section>
+        <!-- Frequently Asked Question using Accordion component -->
+        <section id="faq" class="mt-5">
+            <div class="pb-3 text-center w-75 mx-auto">
+                <h3>Frequently Asked Any Questions</h3>
+                <p>At Legal Solutions Law Firm, our office works tirelessly to obtain the best outcome in your matter.
+                    We’re happy to share a few of our success stories with you</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="accordion accordion-flush " id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    1. What are the differences between Flexbox and Grid?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Flexbox is designed for one-dimensional layouts, and Grid
+                                    for two-dimensional layouts.
+                                    The approach of CSS Grid is the layout first, while the Flexbox approach is
+                                    primarily
+                                    the
+                                    content.
+                                    The Flexbox layout is best suited to application components and small-scale layouts,
+                                    while
+                                    the Grid layout is designed for larger-scale layouts that are not linear in design.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    2. What is CSS box model? How does it work?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">The CSS box model is essentially a box that wraps around
+                                    every HTML element. It consists
+                                    of: margins, borders, padding, and the actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    3. What is the purpose of a media query?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Media queries are a key part of responsive web design, as
+                                    they allow us to create different layouts depending on the size of the viewport, but
+                                    they can also be used to detect other things about the environment your site is
+                                    running on.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    4. What is Semantic tag?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">The core characteristic of a semantic element is that it
+                                    clearly communicated its
+                                    meaning to both the developer and the browser. These elements clearly define its
+                                    content.
+                                    The are several advantages of using semantics tags in HTML:
+                                    The semantic HTML tags help the search engines and other user devices to
+                                    determinethe importance and context of web pages.
+                                    The pages made with semantic elements are much easier to read.
+                                    It has greater accessibility. It offers a better user experience.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="w-100 img-fluid" src="./images/Framee.png" alt="">
+                </div>
         </section>
 
     </main>
