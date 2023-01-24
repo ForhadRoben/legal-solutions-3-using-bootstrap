@@ -22,21 +22,21 @@
     <!-- navbar part -->
     <nav class="container navbar navbar-expand-lg navbar-light  ">
         <div class="container-fluid ">
-            <a class="navbar-brand fw-bold fs-2 " href="#"><img src="./images/Group 2.png" alt=""></a>
+            <a class="navbar-brand fw-bold fs-2" href="#"><img src="./images/Group 2.png" alt=""></a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-toggler-icon1"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav fw-semibold  ">
+                <ul class="navbar-nav fw-semibold">
                     <li class="nav-item">
                         <a class="nav-link " href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Services <i class="fas fa-chevron-right"></i></a>
+                        <a class="nav-link " href="#services">Services <i class="fas fa-chevron-right"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Clients <i class="fas fa-chevron-right"></i></a>
+                        <a class="nav-link " href="#clients">Clients <i class="fas fa-chevron-right"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">FAQ <i class="fas fa-chevron-right"></i></a>
@@ -47,12 +47,12 @@
                     <li class="nav-item">
                         <a class="nav-link " href="#">Register</a>
                     </li>
-
                 </ul>
             </div>
-            <button type="button" class="btn btn-info btn-icon-background text-light d-none d-lg-block">Free
-                Consultation</button>
-
+            <form role="search">
+                <button type="button" class="btn btn-info btn-icon-background text-light">Free
+                    Consultation</button>
+            </form>
         </div>
     </nav>
     <!-- banner part -->
@@ -63,8 +63,8 @@
                 <h1>We Provide Effective <br>Legal Solutions</h1>
                 <p>Legal Solutions is a dynamic law firm with a clear vision of the future. We are a firm that
                     understands what clients need today and, equally importantly, what they will need tomorrow.</p>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search your services"
+                <form class="d-flex flex-column  flex-sm-row" role="search">
+                    <input class="form-control me-2 mb-1 mb-sm-0" type="search" placeholder="Search your services"
                         aria-label="Search">
                     <button class="btn btn-info btn-icon-background text-light " type="submit">Search</button>
                 </form>
@@ -73,8 +73,9 @@
     </div>
     <!-- main part  -->
     <main class="container">
-        <section class="mt-5">
-            <div class="pb-3 text-center w-75 mx-auto service-section ">
+        <!-- services section -->
+        <section id="services" class="mt-5">
+            <div class="pb-3 text-center w-75 mx-auto">
                 <h3>The Legal Practice Area</h3>
                 <p>We are a firm that understands what clients need today and, equally importantly, what they will need
                     tomorrow.</p>
@@ -87,7 +88,8 @@
                         the least possible time and with the least possible cost. </p>
                     <img src="./images/Frame.png" alt="">
                 </div>
-                <div class="p-3 col-12 col-sm-12 col-md-6 col-lg-4 text-center border border-top-0 border-start-0">
+                <div
+                    class="p-3 col-12 col-sm-12 col-md-6 col-lg-4 text-center border border-top-0 border-start-0 bg-light">
                     <img src="./images/Group 15.png" alt="" class="img-fluid pb-3">
                     <h4 class="pb-3">Criminal Law</h4>
                     <p>We are committed to the understanding and realization of each our clients’ demand/s or need/s in
@@ -109,7 +111,8 @@
                         the least possible time and with the least possible cost.</p>
                     <img src="./images/Frame.png" alt="">
                 </div>
-                <div class="p-3 col-12 col-sm-12 col-md-6 col-lg-4 text-center border border-top-0 border-start-0">
+                <div
+                    class="p-3 col-12 col-sm-12 col-md-6 col-lg-4 text-center border border-top-0 border-start-0 bg-light">
                     <img src="./images/Group 16.png" alt="" class="img-fluid pb-3">
                     <h4 class="pb-3">Divorce Law</h4>
                     <p>We are committed to the understanding and realization of each our clients’ demand/s or need/s in
@@ -124,10 +127,72 @@
                         the least possible time and with the least possible cost.</p>
                     <img src="./images/Frame.png" alt="">
                 </div>
-
-
             </div>
         </section>
+        <!-- clients section using carousel -->
+        <section id="clients" class="mt-5">
+            <div class="pb-3 text-center w-75 mx-auto">
+                <h3>What Our Client Say</h3>
+                <p>With Legal Solutions, clients have total accountability of their advisors;nothing is left to chance,
+                    nothing comes as a surprise.</p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active h-100 position-relative">
+                        <img src="./images/judges-gavel-scale-justice-black-table.jpg" class="d-block w-100  "
+                            alt="...">
+                        <div class="carousel-caption position-absolute top-50 start-50 translate-middle text-center ">
+                            <img src="./images/player-1.png" class=" rounded-circle mx-auto d-block" alt="...">
+                            <h5>Sakib Al Hasan</h5>
+                            <p class="pb-2">Professional Cricketer</p>
+                            <p>To provide services through by providing an
+                                understanding of the needs of society and industry</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active h-100 position-relative">
+                        <img src="./images/lady-justice-law-library-concept.jpg" class="d-block w-100  " alt="...">
+                        <div class="carousel-caption position-absolute top-50 start-50 translate-middle text-center ">
+                            <img src="./images/player-2.png" class=" rounded-circle mx-auto d-block" alt="...">
+                            <h5>Md. Wasiful Islam</h5>
+                            <p class="pb-2">UI/UX Designer</p>
+                            <p>I couldn’t be happier with the service that I received! I highly recommend Legal
+                                Solutions and will use them again.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active h-100 position-relative">
+                        <img src="./images/law-justice-concept-dark-background.jpg" class="d-block w-100  " alt="...">
+                        <div class="carousel-caption position-absolute top-50 start-50 translate-middle text-center ">
+                            <img src="./images/player-3.png" class=" rounded-circle mx-auto d-block" alt="...">
+                            <h5>Md. Hasibul Islam</h5>
+                            <p class="pb-2">Graphic Designer</p>
+                            <p> I highly recommend Legal Solutions and will use them again.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
     </main>
 
     <!-- footer part  -->
